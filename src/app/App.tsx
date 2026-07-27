@@ -711,7 +711,7 @@ function AddEntryModal({ onClose, onSave, nextIndex }: {
 }
 
 export default function App() {
-  const [entries, setEntries] = useState<Entry[]>(SAMPLE_ENTRIES);
+  const [entries, setEntries] = useState<Entry[]>(SAMPLE_ENTRIES); // TODO: Replace SAMPLE_ENTRIES with persistent storage or API call in production
   const [selectedEntry, setSelectedEntry] = useState<Entry | null>(null);
   const [showAdd, setShowAdd] = useState(false);
 
