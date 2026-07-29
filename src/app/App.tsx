@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Plus, ChevronRight, Star, Search, Loader2 } from "lucide-react";
+import React from "react";
+import EntryData from "./data.json";
 
 const EMOTIONS = [
   "melancholic", "euphoric", "nostalgic", "transcendent",
@@ -7,6 +9,8 @@ const EMOTIONS = [
   "defiant", "tender", "dreamlike", "anxious",
   "celebratory", "lonely", "hopeful", "overwhelming",
 ];
+
+const EntryBook: Entry[] = EntryData;
 
 interface Entry {
   id: string;
@@ -49,44 +53,6 @@ function parseDiscogsTitle(title: string): { artist: string; album: string } {
   return { artist: title.slice(0, idx), album: title.slice(idx + 3) };
 }
 
-const SAMPLE_ENTRIES: Entry[] = [
-  {
-    id: "1",
-    album: "Carrie & Lowell",
-    artist: "Sufjan Stevens",
-    genre: "Folk",
-    dateListened: "2024-03-14",
-    rating: 5,
-    emotions: ["melancholic", "intimate", "tender", "lonely"],
-    notes: "I wasn't ready for this. Listened on a Sunday morning in March with rain against the window. By 'Should Have Known Better' I had to stop and sit with it. The sparseness feels like a gift — every note chosen, nothing wasted. It made me think about my grandmother.",
-    index: 1,
-    coverArt: "https://is1-ssl.mzstatic.com/image/thumb/Music18/v4/a7/44/b5/a744b5f2-e4af-2037-0ba4-b14e5df1e6fd/source/600x600bb.jpg",
-  },
-  {
-    id: "2",
-    album: "To Pimp a Butterfly",
-    artist: "Kendrick Lamar",
-    genre: "Hip-Hop",
-    dateListened: "2024-05-02",
-    rating: 5,
-    emotions: ["defiant", "transcendent", "raw", "overwhelming"],
-    notes: "The moment 'u' started I realized this album was going to demand something of me. Dense, jazz-soaked, furious and vulnerable at once. 'How Much a Dollar Cost' wrecked me. Listened three times in a row. Still don't feel like I've fully heard it.",
-    index: 2,
-    coverArt: "https://is1-ssl.mzstatic.com/image/thumb/Music18/v4/a7/64/56/a7645622-a7f8-5a0e-cd42-a2c93d45da99/source/600x600bb.jpg",
-  },
-  {
-    id: "3",
-    album: "Blue",
-    artist: "Joni Mitchell",
-    genre: "Folk",
-    dateListened: "2024-07-08",
-    rating: 5,
-    emotions: ["nostalgic", "intimate", "hopeful", "melancholic"],
-    notes: "Everyone told me I would love this. They were right but not for the reasons I expected. 'A Case of You' felt like it was written about something I haven't experienced yet but will. Felt seen in a strange, anachronistic way.",
-    index: 3,
-    coverArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7b/5a/bc/7b5abc5e-4e9a-a48d-ec63-dd4ea2f5ef89/source/600x600bb.jpg",
-  },
-];
 
 function formatDate(dateStr: string) {
   return new Date(dateStr + "T00:00:00").toLocaleDateString("en-US", {
@@ -711,7 +677,7 @@ function AddEntryModal({ onClose, onSave, nextIndex }: {
 }
 
 export default function App() {
-  const [entries, setEntries] = useState<Entry[]>(SAMPLE_ENTRIES); // TODO: Replace SAMPLE_ENTRIES with persistent storage or API call in production
+  const [entries, setEntries] = useState<Entry[]>(EntryBook); // TODO: Replace SAMPLE_ENTRIES with persistent storage 
   const [selectedEntry, setSelectedEntry] = useState<Entry | null>(null);
   const [showAdd, setShowAdd] = useState(false);
 
