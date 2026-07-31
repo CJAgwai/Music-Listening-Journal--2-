@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Plus, ChevronRight, Star, Search, Loader2 } from "lucide-react";
 import React from "react";
-import EntryData from "./data.json";
+import EntryData from "../../backend/data.json";
 
 const EMOTIONS = [
   "melancholic", "euphoric", "nostalgic", "transcendent",
@@ -689,7 +689,7 @@ export default function App() {
     };
     setEntries((prev) => [...prev, newEntry]);
     try {
-      const response = await fetch("/post", {
+      const response = await fetch("http://localhost:3000/post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
