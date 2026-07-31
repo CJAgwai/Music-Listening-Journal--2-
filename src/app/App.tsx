@@ -4,10 +4,7 @@ import React from "react";
 import EntryData from "../../backend/data.json";
 
 const EMOTIONS = [
-  "melancholic", "euphoric", "nostalgic", "transcendent",
-  "intimate", "restless", "peaceful", "raw",
-  "defiant", "tender", "dreamlike", "anxious",
-  "celebratory", "lonely", "hopeful", "overwhelming",
+  "the emotion"
 ];
 
 const EntryBook: Entry[] = EntryData;
