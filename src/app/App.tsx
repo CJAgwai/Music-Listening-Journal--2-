@@ -681,13 +681,26 @@ export default function App() {
   const [selectedEntry, setSelectedEntry] = useState<Entry | null>(null);
   const [showAdd, setShowAdd] = useState(false);
 
-  const handleSave = (data: FormData) => {
+  const handleSave = async (data: FormData) => {
     const newEntry: Entry = {
       ...data,
       id: Date.now().toString(),
       index: entries.length + 1,
     };
     setEntries((prev) => [...prev, newEntry]);
+    try {
+      const response = await fetch("/post", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newEntry),
+      });
+      console.log("Entry saved successfully:", response);
+    } catch (error) {
+      console.error("Failed to save entry:", error);
+    }
+
     setShowAdd(false);
   };
 
