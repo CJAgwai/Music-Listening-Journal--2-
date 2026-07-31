@@ -1,28 +1,3 @@
 [
-  {
-    "id": "1",
-    "album": "Midnights",
-    "artist": "Taylor Swift",
-    "genre": "Pop",
-    "dateListened": "2025-07-29",
-    "rating": 5,
-    "emotions": [],
-    "notes": "A polished album with vivid storytelling and memorable production.",
-    "index": 1,
-    "coverArt": ""
-  },
-  {
-    "album": "Ö",
-    "artist": "Fcukers",
-    "genre": "Electro House",
-    "dateListened": "2026-07-31",
-    "rating": 5,
-    "emotions": [
-      "defiant"
-    ],
-    "notes": "wwaaaa",
-    "coverArt": "https://i.discogs.com/wbTry0Uo79e3sJdu-II1QcxTjMgzLleuSND0K7x5Ytg/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODU1/NjIyLTE3NzQyODA4/ODctOTgyNC5qcGVn.jpeg",
-    "id": "1785539084730",
-    "index": 2
-  }
+  
 ]
