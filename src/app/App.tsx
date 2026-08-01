@@ -5,7 +5,7 @@ import EntryData from "../../backend/data.json";
 
 const EMOTIONS = [
   // Sad / Dark Emotions
-  "mournful", 'dark', 'melancholic', 'bleak',
+  "mournful", 'dark', 'melancholic', 'bleak', 'evil',
   //
   // Warm / Nostalgic Emotions
   'nostalgic', 'warm', 
@@ -14,10 +14,14 @@ const EMOTIONS = [
   'overwhelming', 'electric', 'pumped', 
   //
   // Contemplative Emotions
-  'complative',
-  //
+  'contemplative', 'chill', 'calm', 'relaxed',
+  
   // Anxious / Uneasy Emotions
-  'creeped-out', 'anxious',''
+  'creeped-out', 'anxious', 'uneasy',
+
+  //Joyous Emotions
+  'joyful', 'delightful', 'merry'
+
 ];
 
 const EntryBook: Entry[] = EntryData;
