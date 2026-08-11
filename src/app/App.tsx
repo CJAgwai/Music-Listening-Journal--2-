@@ -691,7 +691,7 @@ function AddEntryModal({ onClose, onSave, nextIndex }: {
 }
 
 export default function App() {
-  const [entries, setEntries] = useState<Entry[]>(EntryBook); // TODO: Replace SAMPLE_ENTRIES with persistent storage 
+  const [entries, setEntries] = useState<Entry[]>(EntryBook); 
   const [selectedEntry, setSelectedEntry] = useState<Entry | null>(null);
   const [showAdd, setShowAdd] = useState(false);
 
@@ -701,7 +701,7 @@ export default function App() {
       id: Date.now().toString(),
       index: entries.length + 1,
     };
-    setEntries((prev) => [...prev, newEntry]);
+    setEntries((prev) => [newEntry, ...prev]); //new entry is added to the top of the list
     try {
       const response = await fetch("http://localhost:3000/post", {
         method: "POST",
