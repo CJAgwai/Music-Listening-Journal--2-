@@ -12,62 +12,15 @@
     "index": 1
   },
   {
-    "album": "Private",
-    "artist": "Speedometer.*",
-    "genre": "Ambient",
-    "dateListened": "2026-08-11",
-    "rating": 4,
-    "emotions": [
-      "relaxed",
-      "chill"
-    ],
-    "notes": "this is like the perfect lounge music. not that i would go to a lounge. I guess I mean my kind of lounge. (which is basically just my room)",
-    "coverArt": "https://i.discogs.com/VZ9rAEcDGmuddwb-PvNAcOCOr9bKgO7FaWadr52w8tc/rs:fit/g:sm/q:90/h:527/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMzY1/NzQtMTc4MjM1NjM1/NS0xOTQ0LnBuZw.jpeg",
-    "id": "1786489258846",
-    "index": 2
-  },
-  {
-    "album": "Revengeseekerz",
-    "artist": "Jane Remover",
-    "genre": "Hyperpop",
-    "dateListened": "2026-08-11",
-    "rating": 5,
-    "emotions": [
-      "electric",
-      "dark",
-      "overwhelming"
-    ],
-    "notes": "HOLY SHIT jane popped awf with dis one right here",
-    "coverArt": "https://i.discogs.com/i2sdIrmF5wYGj9IeDnwLJ-0R2hWKUFPKZs763FjnHiw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNTk3/ODQzLTE3NDM3NDIx/NjMtNDUzNC5qcGVn.jpeg",
-    "id": "1786489323529",
-    "index": 3
-  },
-  {
-    "album": "U",
-    "artist": "underscores",
-    "genre": "Electro",
-    "dateListened": "2026-08-11",
-    "rating": 4,
-    "emotions": [
-      "electric",
-      "joyful",
-      "nostalgic"
-    ],
-    "notes": "Reminds me of a time when popstars were on top of the world. And they really were...",
-    "coverArt": "https://i.discogs.com/ED0ALhIJV8HKd9bkVzDtOWsS669qY_zdRHewEL9Twg0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODM0/ODA4LTE3NzQwODc1/NzAtODI0NC5qcGVn.jpeg",
-    "id": "1786489395066",
-    "index": 4
-  },
-  {
-    "album": "DS2",
-    "artist": "Future (4)",
-    "genre": "Trap",
+    "album": "Sho-Bro",
+    "artist": "Chinese Man",
+    "genre": "Trip Hop",
     "dateListened": "2026-08-11",
     "rating": 0,
     "emotions": [],
-    "notes": "efefefe",
-    "coverArt": "https://i.discogs.com/xbQIW9op_tYcqlY1nAzoIj00XRGZ0HkI0pLynHb1YWg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2NDc1/NzYtMTY1OTEyNjcy/NC0xODAwLmpwZWc.jpeg",
-    "id": "1786489635704",
-    "index": 5
+    "notes": "sickk",
+    "coverArt": "https://i.discogs.com/dCPtmvpXyBZaxM-QUoj3jOjxG3gFGjrTfC47At6sUIo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4Mjg1/MjYtMTQyNzQ4NjQ1/OS03MjIwLmpwZWc.jpeg",
+    "id": "1786489737530",
+    "index": 2
   }
 ]

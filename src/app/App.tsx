@@ -11,7 +11,7 @@ const EMOTIONS = [
   'nostalgic', 'warm', 
   //
   // Energetic / Excited Emotions
-  'overwhelming', 'electric', 'pumped', 
+  'overwhelming', 'electric', 'pumped', "hyper",
   //
   // Contemplative Emotions
   'contemplative', 'chill', 'calm', 'relaxed',
@@ -20,8 +20,10 @@ const EMOTIONS = [
   'creeped-out', 'anxious', 'uneasy',
 
   //Joyous Emotions
-  'joyful', 'delightful', 'merry'
-
+  'joyful', 'delightful', 'merry',
+  //
+  //Miscellaneous Emotions
+  'swagalicious', 'trippy','ridiculous', 'vibey'
 ];
 
 const EntryBook: Entry[] = EntryData;
