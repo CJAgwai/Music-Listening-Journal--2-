@@ -1,7 +1,7 @@
 
   # Music Listening Journal
 
-  This is a code bundle for Music Listening Journal. The original project is available at https://www.figma.com/design/CnruZKFYnJVimSzFk14SPS/Music-Listening-Journal.
+  a pretty simple music listening journal. mark down your thoughts about albums you listen to and give it a rating!
 
   ## Running the code
 
