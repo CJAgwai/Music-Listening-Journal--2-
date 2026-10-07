@@ -1,7 +1,7 @@
 
   # Music Listening Journal
 
-  a pretty simple music listening journal. mark down your thoughts about albums you listen to and give it a rating!
+  a pretty simple music listening journal. mark down your thoughts about albums you listen to and give it a rating! :)
 
   ## Running the code
 
